@@ -15,9 +15,7 @@ image = "videah/skybridge:latest"
   SKYBRIDGE_BASEURL = 'skybridge-lnlyssg.fly.dev' #you need to rename it using your app name .fly.dev
   SKYBRIDGE_SHOW_INDEX = 'true'
   FLY_SWAP = 'true'
-  SKYBRIDGE_SECRET='139201717' #you need to fill it, I taped random numbers and it worked
   SKYBRIDGE_REQUIRE_AUTH_PASSWORD = true
-  SKYBRIDGE_AUTH_PASSWORD = '139201717' #if above is true, it will be asked when you'll try to log in to you bsky account in the app
   SKYBRIDGE_ALLOW_BACKFILL = true
 
 [[mounts]]
