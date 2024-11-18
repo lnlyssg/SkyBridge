@@ -2,7 +2,7 @@ app = 'skybridge-lnlyssg'  #you need to rename it
 primary_region = 'lhr'
 
 [build]
-image = "lnlyssg/skybridge:latest"
+image = "videah/skybridge:latest"
 
 [http_service]
   internal_port = 8080
