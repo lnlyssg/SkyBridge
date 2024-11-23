@@ -4,11 +4,11 @@
 # This is used to help prevent the server from crashing on low-memory fly.io instances.
 if [ "$FLY_SWAP" = "true" ]; then
   echo "Enabling swapfile..."
-  fallocate -l 512M /swapfile
-  chmod 0600 /swapfile
-  mkswap /swapfile
+  fallocate -l 512M /.fly-upper-layer/swapfile
+  chmod 0600 /.fly-upper-layer/swapfile
+  mkswap /.fly-upper-layer/swapfile
   echo 10 > /proc/sys/vm/swappiness
-  swapon /swapfile
+  swapon /.fly-upper-layer/swapfile
   echo 1 > /proc/sys/vm/overcommit_memory
 fi
 
